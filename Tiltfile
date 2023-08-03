@@ -17,3 +17,4 @@ k8s_custom_deploy(
 
 k8s_resource('tap-cop-java-web-app', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'carto.run/workload-name': 'tap-cop-java-web-app', 'app.kubernetes.io/component': 'run'}])
+allow_k8s_contexts('gke_dap-ops_us-west3_bkieling-tap-testbed')
